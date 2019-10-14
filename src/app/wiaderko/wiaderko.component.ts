@@ -7,14 +7,14 @@ import { Point } from '../model/Point';
   styleUrls: ['./wiaderko.component.scss']
 })
 export class WiaderkoComponent implements OnInit {
-  amount: number = 500;
-  counter: number = 0;
+  amount = 500;
+  counter = 0;
   prop: string;
-  json_test = {
-    'Hahaha': 'Rotfl',
-    'Foo': 'Bar'
+  jsonTest = {
+    Hahaha: 'Rotfl',
+    Foo: 'Bar'
   };
-  new_var: string;
+  newVar: string;
   point: Point = new Point(10, 20);
 
   constructor() { }
@@ -25,7 +25,7 @@ export class WiaderkoComponent implements OnInit {
 
   someFun(x: string) {
     this.counter++;
-    this.json_test.Foo = x + this.counter;
+    this.jsonTest.Foo = x + this.counter;
   }
 
   deposit() {
