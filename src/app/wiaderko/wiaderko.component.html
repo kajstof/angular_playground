@@ -1,0 +1,16 @@
+<div>
+    <div id="a">
+        <app-grabki [(amount)]="amount" [(point)]="point"></app-grabki>
+    </div>
+    <h1>Parent point: {{point.getValue()}}</h1>
+    <p>wiaderko works!</p>
+    <h1>Really works! <span style="color: violet;">{{prop}}</span></h1>
+    <h2>{{prop}}</h2>
+    <img [alt]="prop" />
+    <div>
+        {{ json_test | json }}
+    </div>
+    <button (click)="someFun('newValue')">Click</button>
+    <h1>Amount: {{amount}}</h1>
+    <button (click)="deposit()">Deposit 100</button>
+</div>
